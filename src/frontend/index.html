@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Python AI Workshop Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./static/globals.css" />
+  </head>
+  <body>
+    <div>
+      <h1 class="pixel">
+        Welcome to <span class="rainbow">Technova</span> 2023!
+      </h1>
+      <div class="logos">
+        <img id="logo-msft" src="./static/image/logo-msft.png" />
+        <img id="logo-openai" src="./static/image/logo-openai.png" />
+        <img id="logo-technova" src="./static/image/logo-technova.png" />
+      </div>
+      <div class="description dogica">
+        <div>
+          Start with the first exercise by pressing the 1 box below this text.
+          As you complete exercises, the next ones will light up and be
+          clickable. You will learn to send get a response from GPT, have a
+          conversation with GPT, send a prompt to GPT, and prompt engineer to
+          solve a maze game. Good luck!
+        </div>
+      </div>
+      <div class="dogica exercise-btns-title">Exercises</div>
+      <div class="exercise-btns">
+        <a href="/exercise-1/">
+          <div id="exercise-1">1</div>
+        </a>
+        <a href="/exercise-2/" class="disabled">
+          <div id="exercise-2">2</div>
+        </a>
+        <a href="/exercise-3/" class="disabled">
+          <div id="exercise-3">3</div>
+        </a>
+        <a href="/exercise-4/" class="disabled">
+          <div id="exercise-4">4</div>
+        </a>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

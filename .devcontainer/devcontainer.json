@@ -1,0 +1,20 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"],
+      "settings": {
+        "extensions.ignoreRecommendations": true
+      }
+    }
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Frontend",
+      "onAutoForward": "notify"
+    },
+    "4200": {
+      "label": "Backend",
+      "onAutoForward": "silent"
+    }
+  }
+}
