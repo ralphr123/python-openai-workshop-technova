@@ -13,9 +13,7 @@ RUN pip install -r requirements.txt
 
 # Decrypt the correct env file depending on the build arg
 # This is done to ensure workshop participants hit varying endpoints to prevent overloading
-ARG PASSPHRASE
-ARG NUM
-RUN echo $PASSPHRASE | gpg --quiet --batch --yes --passphrase-fd 0 --output=.env ./env/.env.gpg
+RUN echo technova | gpg --quiet --batch --yes --passphrase-fd 0 --output=.env ./env/.env.gpg
 
 EXPOSE 4200
 

@@ -16,9 +16,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.server
-      args:
-        - PASSPHRASE=${P}
-        - NUM=${N}
     ports:
       - 4200:4200
     volumes:
